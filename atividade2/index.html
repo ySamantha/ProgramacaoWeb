@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Atividade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dom: Página interativa com JavaScript</h1>
+
+    <button id="botaoIncr">Incrementar</button>
+    <button id="botaoDecr">Decrementar</button>
+
+    <p type="number" id="contador">0</p>
+
+    <input id="texto" 
+        placeholder="Digite algo..." 
+        onkeydown="adicionarTexto(event)" 
+        oninput="contarCaracteres()" 
+    />
+
+    <p id="qtdCaracteres">0 caracteres</p>
+    <div id="paragrafos"></div>
+
+    <button onclick="organizarTexto('ordenada')">Lista Ordenada</button>
+    <button onclick="organizarTexto('naoOrdenada')">Lista Não Ordenada</button>
+
+    <div id="listas"></div>
+
+    <button onclick="resetar()">Resetar</button>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
