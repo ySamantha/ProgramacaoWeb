@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - Funções</title>
+</head>
+<body>
+    <h1>Adicionar Item</h1>
+
+    <input id="item"
+    placeholder="Digite um item..."
+    onkeydown="adicionarItem(event)"
+    />
+
+    <button id="botaoAdd">Adicionar</button>
+    <hr>
+
+    <h2>Tabela de Itens</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+            </tr>
+        </thead>
+        <tbody id="paragrafos">
+        </tbody>
+    </table>
+    <hr>
+
+    <h2>Marcar ou Desmarcar o Item</h2>
+    <p>Escolha o item:</p>
+    <select id="selectItem">
+    <option value="" disabled selected>Selecione um item</option>
+    </select>
+
+    <button id="botaoMarcar">Marcar</button>
+    <button id="botaoDesmarcar">Desmarcar</button>
+    <button id="botaoRemover">Remover Item</button>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
+
